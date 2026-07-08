@@ -16,10 +16,10 @@ AI assistance was used in the following parts:
 - All design decisions, content, and structure were made by me
 
 ## 🛠️ Technologies Used
-- HTML5
-- CSS3 (Flexbox, Grid, Animations)
-- JavaScript (DOM Manipulation, IntersectionObserver)
-- Figma (Lo-fi Wireframe + Hi-fi Prototype)
+- **HTML5** — semantic structure for accessibility and SEO
+- **CSS3** — Flexbox and Grid for layout, no frameworks needed for this scale
+- **JavaScript** — DOM manipulation for interactivity, no frameworks needed
+- **Figma** — industry standard for UI/UX design and prototyping
 
 ## 📁 File Structure
 website v2/
