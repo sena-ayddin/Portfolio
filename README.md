@@ -3,7 +3,7 @@
 A personal portfolio website designed and developed as part of a university course project. This version (V2) was built with AI assistance for specific parts of the process.
 
 ## 🌐 Live Site
-[Link will be added after publishing]
+https://sena-ayddin.github.io/Portfolio
 
 ## 📋 Project Overview
 A minimal and elegant portfolio website presenting my academic background, projects, and skills as a Computer Engineering student. This version includes JavaScript interactivity, a contact form, and scroll animations.
