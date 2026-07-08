@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayse Senanur Aydin | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<!-- nav bar ----------------------------------------------------------------------------------------- -->
+    <nav>
+    <span class="logo">Ayse Senanur Aydin</span>
+    <ul>
+        <!-- href="#about" tıklanınca About bölümüne atla -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+
+<!-- hero -------------------------------------------------------------------------------------------- -->
+    <section class="hero">
+    <div class="hero-left">
+        <h1>Hi, I'm Ayse Senanur Aydin</h1>
+        <p class="hero-headline">
+        A curious Computer Engineering student passionate about building systems, exploring the world, connecting with people, and capturing meaningful everyday moments through photography.
+        </p>
+        <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Academic Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+    </div>
+
+<!-- sağ kolon: profil fotoğrafı placeholder -->
+    <div class="hero-right">
+        <div class="hero-photo">
+            <img src="pics/sena.jpeg " alt="Ayse Senanur Aydin">
+        </div>
+    </div>
+    </section>
+
+<!-- about ---------------------------------------------------------------------------------------- -->
+    <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>
+        I am a Computer Engineering student with a strong interest in software development, embedded systems, and low-level programming. I enjoy understanding how systems work at a fundamental level and building solutions that are both efficient and meaningful.
+        </p>
+        <p>
+        Academically, my focus areas include software development, database systems, and systems design. I find satisfaction in tackling complex problems and turning them into working, practical applications through code.
+        </p>
+        <p>
+        Beyond engineering, I have a strong personal side — I love travelling, meeting new people, and documenting life through photography. These experiences shape how I think, communicate, and approach challenges creatively.
+        </p>
+        <p>
+        I participated in an Erasmus+ exchange program in Germany, which is one of the most valuable experiences of my life. It expanded my perspective, improved my independence, and helped me grow both academically and personally. This portfolio reflects where I am now — and where I am heading.
+        </p>
+    </div>
+    </section>
+
+<!-- experience ------------------------------------------------------------------------------------- -->
+    <section class="experience" id="experience">
+    <h2>Experience & Highlights</h2>
+    <p class="section-intro">
+        Key experiences that shaped my academic and personal development.
+    </p>
+    <div class="experience-list">
+        <div class="experience-item">
+        <div>
+            <h3>Erasmus+ Exchange Program</h3>
+            <p>
+            International academic exchange in Germany — expanded perspective, independence, and adaptability.
+            </p>
+        </div>
+        </div>
+
+        <div class="experience-item">
+        <div>
+            <h3>IKU Roverium – European Rover Challenge 2027</h3>
+            <p>
+            Ongoing multidisciplinary team project developing a Mars-inspired rover. Contributing to software and outreach.
+            </p>
+        </div>
+        </div>
+
+        <div class="experience-item">
+        <div>
+            <h3>Programming Course Student Assistant</h3>
+            <p>
+            Supported the instructor during programming classes by assisting students with coding concepts, answering questions, and helping them better understand course materials. This experience strengthened my communication, problem-solving, and mentoring skills.
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+<!-- projects ------------------------------------------------------------------------------------ -->
+    <section class="projects" id="projects">
+    <h2>Academic Projects</h2>
+    <p class="section-intro">
+        A collection of academic, technical, analytical, and team-based projects
+        developed during my studies.
+    </p>
+
+    <div class="projects-grid">
+    <!-- karta tıklayınca html'ler açılıcak -->
+        <a href="wildlife.html" class="project-card-link">
+        <div class="project-card-mini">
+            <div class="project-card-img">
+                <img src="pics/wildlife.jpg " alt="Wildlife Project">
+            </div>
+            <h3>Wildlife Conservation Database</h3>
+        </div>
+        </a>
+
+        <a href="aktivrent.html" class="project-card-link">
+        <div class="project-card-mini">
+            <div class="project-card-img">
+                <img src="pics/aktivrent.png " alt="Aktivrent Project">
+            </div>
+            <h3>AKTIVRENT — Business Plan</h3>
+        </div>
+        </a>
+
+        <a href="roverium.html" class="project-card-link">
+        <div class="project-card-mini">
+            <div class="project-card-img">
+                <img src="pics/roverium.png " alt="Roverium Project">
+            </div>
+            <h3>IKU Roverium – Rover Challenge</h3>
+        </div>
+        </a>
+
+        <a href="portfolio.html" class="project-card-link">
+        <div class="project-card-mini">
+            <div class="project-card-img">
+                <img src="pics/portfolio.png " alt="Portfolio Project">
+            </div>
+            <h3>Personal Portfolio Website</h3>
+        </div>
+        </a>
+    </div>
+    </section>
+
+<!-- contact ------------------------------------------------------------------------------------ -->
+    <section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p class="section-intro">
+        Feel free to reach out for collaboration, opportunities, or just a
+        conversation.
+    </p>
+
+<!-- iletişim formu -->
+    <form class="contact-form" id="contactForm">
+    <!-- isim -->
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
+        </div>
+
+    <!-- email -->
+        <div class="form-group">
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="your@email.com"
+            required
+        />
+        </div>
+
+    <!-- mesaj -->
+        <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+        ></textarea>
+        </div>
+
+    <!-- gönder butonu -->
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+
+<!-- sosyal medya linkleri -->
+    <div class="social-links">
+        <a href="#" class="social-btn">GitHub</a>
+        <a href="#" class="social-btn">LinkedIn</a>
+        <a href="#" class="social-btn">Instagram</a>
+    </div>
+    </section>
+
+<!-- footer -->
+    <footer>
+    <p>© 2026 Ayse Senanur Aydin</p>
+    </footer>
+
+<!-- javaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

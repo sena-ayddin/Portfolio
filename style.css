@@ -1,0 +1,447 @@
+/* süm elemanların margin ve padding'ini sıfırla ki her tarayıcıda aynı gözüksün */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* sayfanın genel stili */
+body {
+  font-family: "Lora", serif;
+  color: #1c0a0e;
+  background-color: #ffffff;
+}
+
+/* nav bar ------------------------------------------------------------------------------ */
+
+/* nav bar — logo solda, linkler sağda */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  height: 80px;
+  background: #ffffff;
+  position: sticky; /* sayfa kaydırılınca nav üstte kalmaya devam etsin */
+  top: 0;
+  z-index: 100; /* diğer elemanların üstünde dursun diye en üst katman */
+  border-bottom: 1px solid #fdeef2;
+}
+
+nav .logo {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #7d1535;
+  text-decoration: none;
+}
+
+/*nav linkleri */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1c0a0e;
+  transition: color 0.3s; /* hover geçişi */
+}
+
+/* nav linkine mouse gelince renk değiştirsin */
+nav ul a:hover {
+  color: #7d1535;
+}
+
+/* hero --------------------------------------------------------------------------- */
+
+.hero {
+  background: #1c0a0e;
+  padding: 80px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  min-height: 90vh; /* hero ekranın büyük bi kısmını kaplasın */
+}
+
+.hero-left {
+  width: 550px;
+}
+
+/* ana başlık*/
+.hero-left h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 40px;
+  line-height: 1.15;
+  text-align: right; /* ortala */
+}
+
+/* tanıtım cümlesi */
+.hero-headline {
+  font-size: 15px;
+  color: #7b5563;
+  line-height: 1.9;
+  margin-bottom: 48px;
+  margin-left: 0; /* sola dayalı */
+  max-width: 380px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center; /* ortala */
+}
+
+/* dolu buton — bordo */
+.btn-primary {
+  background: #7d1535;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+/* dolu butona hover */
+.btn-primary:hover {
+  background: #e8547a;
+}
+
+/* çerçeveli buton */
+.btn-secondary {
+  border: 2px solid #7d1535;
+  color: #7d1535;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+/* çerçeveli butona hover */
+.btn-secondary:hover {
+  background: #7d1535;
+  color: #ffffff;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+/* fotoğraf */
+.hero-photo img {
+  width: 320px;
+  height: 380px;
+  background: #fdeef2;
+  border-radius: 50%; /* oval şekil */
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+
+/* about ---------------------------------------------------------------------------------------- */
+
+.about {
+  padding: 100px 64px;
+  background: #ffffff;
+  max-width: 800px; /* okunabilirlik için max genişlik */
+  margin: 0 auto; /* sayfada ortala */
+}
+
+/* about başlığı */
+.about h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #1c0a0e;
+  margin-bottom: 40px;
+}
+
+/* about paragrafları */
+.about-content p {
+  font-size: 16px;
+  color: #4b3b3f;
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+
+/* experience ----------------------------------------------------------------------------------- */
+
+.experience {
+  background: #fdeef2;
+  padding: 100px 64px;
+}
+
+/* experience başlığı */
+.experience h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #1c0a0e;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.section-intro {
+  text-align: center;
+  color: #7b5563;
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border-bottom: 4px solid #7d1535;
+  border-top: 4px solid #7d1535;
+  text-align: center;
+}
+
+/* deneyim başlığı */
+.experience-item h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #1c0a0e;
+  margin-bottom: 8px;
+}
+
+/* deneyim açıklaması */
+.experience-item p {
+  font-size: 14px;
+  color: #7b5563;
+  line-height: 1.7;
+}
+
+/* projects -------------------------------------------------------------------------------------- */
+
+.projects {
+  background: #1c0a0e;
+  padding: 100px 64px;
+}
+
+/* projects başlığı */
+.projects h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* projects giriş cümlesi */
+.projects .section-intro {
+  color: #7b5563;
+  margin-bottom: 48px;
+}
+
+/* proje — 2ye 2 kart düzeni */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* iki kolon */
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* kart linki — altı çizgisiz, renksiz */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card-mini {
+  background: #fdeef2;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s; /* hover'da hafif büyür */
+}
+
+.project-card-mini:hover {
+  transform: translateY(-8px);
+}
+
+/* kart üst görseli */
+.project-card-img {
+  width: 100%;
+  height: 200px;
+  background: #1c0a0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+.project-card-img img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* kart başlıkları */
+.project-card-mini h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #1c0a0e;
+  padding: 20px;
+  text-align: center;
+}
+
+/* contact ------------------------------------------------------------------------------------ */
+
+.contact {
+  background: #ffffff;
+  padding: 100px 64px;
+  text-align: center;
+}
+
+/* contact başlığı */
+.contact h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #1c0a0e;
+  margin-bottom: 16px;
+}
+
+.contact .section-intro {
+  margin-bottom: 48px;
+}
+
+/* sosyal medya butonları */
+.social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* her sosyal medya butonu fenotipi */
+.social-btn {
+  background: #7d1535;
+  color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.social-btn:hover {
+  background: #e8547a;
+}
+
+/* iletişim formu */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 48px; /* ortala, altına boşluk */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left; /* form içi sola yasla */
+}
+
+/* her form alanı grubu — label + input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* label yazısı */
+.form-group label {
+  font-size: 13px;
+  color: #7b5563;
+  font-weight: 500;
+}
+
+/* input alanları */
+.form-group input,
+.form-group textarea {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  color: #1c0a0e;
+  outline: none;
+  transition: border 0.3s;
+}
+
+/* input'a tıklanınca border bordo olur */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #7d1535;
+}
+
+/* textarea yeniden boyutlandırılamaz */
+.form-group textarea {
+  resize: none;
+}
+
+/* gönder butonu */
+.contact-form .btn-primary {
+  font-family: "Lora", serif;
+  width: fit-content;
+  cursor: pointer;
+  border: none;
+}
+
+/* footer ----------------------------------------------------------------------------------------- */
+
+footer {
+  background: #e8547a;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* scroll animasyonu ------------------------------------------------------------------------------ */
+
+/* başlangıçta section'lar görünmesin ve biraz aşağıda dursunlar diye */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* JS visible class ekleyince section belirir */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* teşekkür mesajı ------------------------------------------------------------------------------ */
+
+/* form gönderilince çıkan teşekkür mesajı */
+.thanks-message {
+  text-align: center;
+  padding: 48px;
+}
+
+.thanks-message h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #7D1535;
+  margin-bottom: 16px;
+}
+
+.thanks-message p {
+  font-size: 15px;
+  color: #7B5563;
+}
