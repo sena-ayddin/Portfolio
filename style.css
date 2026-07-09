@@ -62,7 +62,7 @@ nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   min-height: 90vh; /* hero ekranın büyük bi kısmını kaplasın */
 }
 
